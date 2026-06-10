@@ -1,0 +1,482 @@
+[
+  {
+    "id": "deepseek-main",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "deepseek-v4-flash",
+      "deepseek-reasoner"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://api.deepseek.com/anthropic",
+    "claude_api_key_env": "DEEPSEEK_API_KEY",
+    "claude_auth_token_env": "DEEPSEEK_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": "DeepSeek docs in workspace provide Claude Code env wiring through the Anthropic-compatible endpoint."
+  },
+  {
+    "id": "deepseek-balanced",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "deepseek-v4-pro",
+      "deepseek-reasoner"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://api.deepseek.com/anthropic",
+    "claude_api_key_env": "DEEPSEEK_API_KEY",
+    "claude_auth_token_env": "DEEPSEEK_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "deepseek-economy",
+    "provider": "deepseek",
+    "model": "deepseek-reasoner",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "deepseek-v4-pro",
+      "deepseek-v4-flash"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://api.deepseek.com/anthropic",
+    "claude_api_key_env": "DEEPSEEK_API_KEY",
+    "claude_auth_token_env": "DEEPSEEK_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "glm-main",
+    "provider": "glm",
+    "model": "GLM-5.1",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "api_key_env": "ZHIPU_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "GLM-5",
+      "GLM-5-Turbo"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://open.bigmodel.cn/api/anthropic",
+    "claude_api_key_env": "ZHIPU_API_KEY",
+    "claude_auth_token_env": "ZHIPU_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": "GLM docs in workspace explicitly provide Claude/Anthropic-compatible migration via /api/anthropic."
+  },
+  {
+    "id": "glm-balanced",
+    "provider": "glm",
+    "model": "GLM-5",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "api_key_env": "ZHIPU_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "GLM-5.1",
+      "GLM-5-Turbo"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://open.bigmodel.cn/api/anthropic",
+    "claude_api_key_env": "ZHIPU_API_KEY",
+    "claude_auth_token_env": "ZHIPU_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "glm-economy",
+    "provider": "glm",
+    "model": "GLM-5-Turbo",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "api_key_env": "ZHIPU_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "GLM-5",
+      "GLM-4.7-FlashX"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://open.bigmodel.cn/api/anthropic",
+    "claude_api_key_env": "ZHIPU_API_KEY",
+    "claude_auth_token_env": "ZHIPU_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "minimax-main",
+    "provider": "minimax",
+    "model": "MiniMax-M2.7-highspeed",
+    "base_url": "https://api.minimax.chat/v1",
+    "api_key_env": "MINIMAX_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "MiniMax-M2.5-highspeed",
+      "MiniMax-M2.1-highspeed"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://api.minimaxi.com/anthropic",
+    "claude_api_key_env": "MINIMAX_API_KEY",
+    "claude_auth_token_env": "MINIMAX_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": "MiniMax docs in workspace show Anthropic-compatible usage via https://api.minimaxi.com/anthropic."
+  },
+  {
+    "id": "minimax-balanced",
+    "provider": "minimax",
+    "model": "MiniMax-M2.5-highspeed",
+    "base_url": "https://api.minimax.chat/v1",
+    "api_key_env": "MINIMAX_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "MiniMax-M2.7-highspeed",
+      "MiniMax-M2.1-highspeed"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://api.minimaxi.com/anthropic",
+    "claude_api_key_env": "MINIMAX_API_KEY",
+    "claude_auth_token_env": "MINIMAX_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "minimax-economy",
+    "provider": "minimax",
+    "model": "MiniMax-M2.1-highspeed",
+    "base_url": "https://api.minimax.chat/v1",
+    "api_key_env": "MINIMAX_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "MiniMax-M2.7-highspeed",
+      "MiniMax-M2.5-highspeed"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://api.minimaxi.com/anthropic",
+    "claude_api_key_env": "MINIMAX_API_KEY",
+    "claude_auth_token_env": "MINIMAX_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "qwen-main",
+    "provider": "qwen",
+    "model": "qwen3.6-max-preview",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "qwen3.6-plus-2026-04-02",
+      "qwen3.6-flash-2026-04-16"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://dashscope.aliyuncs.com/apps/anthropic",
+    "claude_api_key_env": "DASHSCOPE_API_KEY",
+    "claude_auth_token_env": "DASHSCOPE_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": true,
+    "notes": "Qwen pay-as-you-go route follows the docs path https://dashscope.aliyuncs.com/apps/anthropic, which Claude Code accesses as a /v1 gateway."
+  },
+  {
+    "id": "qwen-balanced",
+    "provider": "qwen",
+    "model": "qwen3.6-plus-2026-04-02",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "qwen3.6-max-preview",
+      "qwen3.6-flash-2026-04-16"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://dashscope.aliyuncs.com/apps/anthropic",
+    "claude_api_key_env": "DASHSCOPE_API_KEY",
+    "claude_auth_token_env": "DASHSCOPE_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": true,
+    "notes": "Qwen docs in workspace explicitly provide Claude Code configuration via DashScope Anthropic-compatible endpoints."
+  },
+  {
+    "id": "qwen-economy",
+    "provider": "qwen",
+    "model": "qwen3.6-flash-2026-04-16",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "qwen3.6-plus-2026-04-02",
+      "qwen3.6-max-preview"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://dashscope.aliyuncs.com/apps/anthropic",
+    "claude_api_key_env": "DASHSCOPE_API_KEY",
+    "claude_auth_token_env": "DASHSCOPE_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": true,
+    "notes": "Qwen docs in workspace explicitly provide Claude Code configuration via DashScope Anthropic-compatible endpoints."
+  },
+  {
+    "id": "anthropic-main",
+    "provider": "anthropic",
+    "model": "claude-opus-4-7",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "protocol": "anthropic",
+    "fallback_models": [
+      "claude-opus-4-6",
+      "claude-haiku-4-5-20251001"
+    ],
+    "headers": {},
+    "claude_model": "claude-opus-4-7",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "ANTHROPIC_API_KEY",
+    "claude_auth_token_env": "ANTHROPIC_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "anthropic-balanced",
+    "provider": "anthropic",
+    "model": "claude-opus-4-6",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "protocol": "anthropic",
+    "fallback_models": [
+      "claude-opus-4-7",
+      "claude-haiku-4-5-20251001"
+    ],
+    "headers": {},
+    "claude_model": "claude-opus-4-6",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "ANTHROPIC_API_KEY",
+    "claude_auth_token_env": "ANTHROPIC_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "anthropic-economy",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5-20251001",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "protocol": "anthropic",
+    "fallback_models": [
+      "claude-opus-4-7",
+      "claude-opus-4-6"
+    ],
+    "headers": {},
+    "claude_model": "claude-haiku-4-5-20251001",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "ANTHROPIC_API_KEY",
+    "claude_auth_token_env": "ANTHROPIC_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "chatgpt-main",
+    "provider": "chatgpt",
+    "model": "gpt-5.5",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "OPENAI_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "gpt-5.4",
+      "gpt-5.3"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "OPENAI_API_KEY",
+    "claude_auth_token_env": "OPENAI_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": true,
+    "notes": "Claude launch can use the workspace relay base_url when provided in APIs.txt or imported config."
+  },
+  {
+    "id": "chatgpt-balanced",
+    "provider": "chatgpt",
+    "model": "gpt-5.4",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "OPENAI_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "gpt-5.5",
+      "gpt-5.3"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "OPENAI_API_KEY",
+    "claude_auth_token_env": "OPENAI_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": true,
+    "notes": "Claude launch can use the workspace relay base_url when provided in APIs.txt or imported config."
+  },
+  {
+    "id": "chatgpt-economy",
+    "provider": "chatgpt",
+    "model": "gpt-5.3",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "OPENAI_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "gpt-5.5",
+      "gpt-5.4"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "OPENAI_API_KEY",
+    "claude_auth_token_env": "OPENAI_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": true,
+    "notes": "Claude launch can use the workspace relay base_url when provided in APIs.txt or imported config."
+  },
+  {
+    "id": "doubao-main",
+    "provider": "doubao",
+    "model": "doubao-seed-2-0-pro-260215",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "api_key_env": "ARK_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "doubao-seed-2-0-lite-260215",
+      "doubao-seed-code-preview-251028"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://ark.cn-beijing.volces.com/api/compatible",
+    "claude_api_key_env": "ARK_API_KEY",
+    "claude_auth_token_env": "ARK_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": "Doubao docs explicitly provide Claude Code access through the Anthropic-compatible Volcengine endpoint."
+  },
+  {
+    "id": "doubao-balanced",
+    "provider": "doubao",
+    "model": "doubao-seed-2-0-lite-260215",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "api_key_env": "ARK_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "doubao-seed-2-0-pro-260215",
+      "doubao-seed-2-0-mini-260215"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://ark.cn-beijing.volces.com/api/compatible",
+    "claude_api_key_env": "ARK_API_KEY",
+    "claude_auth_token_env": "ARK_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": "Doubao docs explicitly provide Claude Code access through the Anthropic-compatible Volcengine endpoint."
+  },
+  {
+    "id": "doubao-economy",
+    "provider": "doubao",
+    "model": "doubao-seed-2-0-mini-260215",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "api_key_env": "ARK_API_KEY",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "doubao-seed-2-0-lite-260215",
+      "doubao-seed-code-preview-251028"
+    ],
+    "headers": {},
+    "claude_model": "",
+    "claude_base_url": "https://ark.cn-beijing.volces.com/api/compatible",
+    "claude_api_key_env": "ARK_API_KEY",
+    "claude_auth_token_env": "ARK_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": "Doubao docs explicitly provide Claude Code access through the Anthropic-compatible Volcengine endpoint."
+  },
+  {
+    "id": "claude-main",
+    "provider": "anthropic",
+    "model": "claude-opus-4-6",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "protocol": "anthropic",
+    "fallback_models": [
+      "claude-sonnet-4-6",
+      "claude-haiku-4-5-20251001"
+    ],
+    "headers": {},
+    "claude_model": "claude-opus-4-6",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "ANTHROPIC_API_KEY",
+    "claude_auth_token_env": "ANTHROPIC_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": "Direct Anthropic profile for native Claude runs. If APIs.txt provides a relay baseurl, multiclaude will prefer relay auth-token launch mode."
+  },
+  {
+    "id": "claude-balanced",
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-6",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "protocol": "anthropic",
+    "fallback_models": [
+      "claude-opus-4-6",
+      "claude-haiku-4-5-20251001"
+    ],
+    "headers": {},
+    "claude_model": "claude-sonnet-4-6",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "ANTHROPIC_API_KEY",
+    "claude_auth_token_env": "ANTHROPIC_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  },
+  {
+    "id": "claude-economy",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5-20251001",
+    "base_url": "https://yxai.anthropic.edu.pl",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "protocol": "anthropic",
+    "fallback_models": [
+      "claude-sonnet-4-6",
+      "claude-opus-4-6"
+    ],
+    "headers": {},
+    "claude_model": "claude-haiku-4-5-20251001",
+    "claude_base_url": "https://yxai.anthropic.edu.pl",
+    "claude_api_key_env": "ANTHROPIC_API_KEY",
+    "claude_auth_token_env": "ANTHROPIC_API_KEY",
+    "claude_launch_supported": true,
+    "supports_vision": false,
+    "notes": ""
+  }
+]

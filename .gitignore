@@ -1,0 +1,30 @@
+# 编译产物
+*.exe
+*.o
+*.out
+*.obj
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 临时文件
+page_*.txt
+*.tmp
+
+# 报告和参考文件（不上传）
+*.docx
+*.pdf
+*.png
+!data/charts/*.png
+
+# 系统文件
+.DS_Store
+Thumbs.db

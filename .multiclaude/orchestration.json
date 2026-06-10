@@ -1,0 +1,22 @@
+{
+  "lead": {
+    "profile_id": "deepseek-main",
+    "purpose": "Primary Claude-facing coordinator"
+  },
+  "planner": {
+    "profile_id": "claude-balanced",
+    "purpose": "Break large work into concrete steps"
+  },
+  "executor": {
+    "profile_id": "deepseek-balanced",
+    "purpose": "Fast execution draft"
+  },
+  "reviewer": {
+    "profile_id": "qwen-balanced",
+    "purpose": "Review for gaps and regressions"
+  },
+  "synthesizer": {
+    "profile_id": "claude-main",
+    "purpose": "Produce final merged answer"
+  }
+}

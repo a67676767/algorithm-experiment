@@ -1,0 +1,9 @@
+{
+  "active_profile": "deepseek-main",
+  "last_launch": {
+    "profile": "deepseek-main",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "settings_path": "D:\\Desktop\\work\\algorithm\\.claude\\settings.local.json"
+  }
+}

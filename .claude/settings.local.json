@@ -1,0 +1,42 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "OPENAI_BASE_URL": "https://api.deepseek.com",
+    "ANTHROPIC_AUTH_TOKEN": "sk-4c1e2575884f4b599350ecd0e26ef612",
+    "OPENAI_API_KEY": "sk-4c1e2575884f4b599350ecd0e26ef612",
+    "MULTICLAUDE_PROVIDER": "deepseek",
+    "MULTICLAUDE_MODEL": "deepseek-v4-pro",
+    "MULTICLAUDE_PROFILE": "deepseek-main",
+    "MULTICLAUDE_PROTOCOL": "openai_compatible",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-pro",
+    "CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY": "1",
+    "ANTHROPIC_CUSTOM_MODEL_OPTION": "deepseek-v4-pro",
+    "ANTHROPIC_CUSTOM_MODEL_OPTION_NAME": "deepseek-v4-pro",
+    "ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION": "deepseek via multiclaude gateway",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "deepseek-v4-pro",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "deepseek-reasoner"
+  },
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  },
+  "hooks": {},
+  "disableAllHooks": false,
+  "includeCoAuthoredBy": false,
+  "multiclaude": {
+    "profile": "deepseek-main",
+    "provider": "deepseek",
+    "upstream_model": "deepseek-v4-pro",
+    "protocol": "openai_compatible",
+    "fallback_models": [
+      "deepseek-v4-flash",
+      "deepseek-reasoner"
+    ],
+    "supports_vision": false,
+    "notes": "DeepSeek docs in workspace provide Claude Code env wiring through the Anthropic-compatible endpoint."
+  }
+}
